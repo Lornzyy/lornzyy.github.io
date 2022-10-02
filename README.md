@@ -66,7 +66,7 @@ I will continue focusing on grid in CSS and also CSS in general.
 
 ### Useful resources
 
-- [Example resource 1](https://w3school) - This helped me in the media query concept. I understood how it works and will implement it moving forward..
+- [Example resource 1](https://w3schoolcom/css) - This helped me in the media query concept. I understood how it works and will implement it moving forward..
 
 
 ## Author
