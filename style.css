@@ -3,10 +3,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Outfit";
+
 }
 
 body{
-    font-family: "Outfit";
     height: 100vh;
     width: 100%;
     background-color:  hsl(212, 45%, 89%);
@@ -19,7 +20,7 @@ body{
     flex-wrap: wrap;
     background-color: hsl(0, 0%, 100%);
     margin: 100px 20px 20px 750px;
-
+    align-items: center;
 
 }
 .qr-code{
@@ -30,13 +31,13 @@ body{
     margin: 5px 15x 10px 10px;
 
 }
-body h1{
+.container h1{
     font-weight: 700;
     margin: 0px 10px 0px 30px;
     min-width: 350px;
     text-align: center;
 }
-.container > p{
+.container p{
     font-weight: 400;
     font-size: 15px;
     max-width: 220px;
@@ -53,19 +54,35 @@ body h1{
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 1440px){
-    body{
-        background-color: hsl(212, 45%, 89%);
-        
 
+/** style for devices screen width from 375px and 
+below and larger than 1440*/
+@media only screen and (max-width: 375px)
+{
+
+    .container{
+        width: 100%;
+        height: 90%;
+        margin: 40px 10px 40px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
-
-}
-
-@media only screen and (max-width: 375px){
-
-    body{
-        background-color:  hsl(300, 15%, 55%);
+    .qr-code{
+        border-radius: 37px; 
+    }
+    .container h1{
+        margin: 0px 5px 0px 50px;
+        min-width: 350px;
+        text-align: center;
+    }
+    .container p{
+        max-width: 220px;
+        text-align: center;
+        padding: 5px;
+        margin-left: 70px;
+        margin-right: 50px;
     }
     
     .attribution{
@@ -77,4 +94,32 @@ body h1{
 }
 
 
+}
+@media only screen and (max-width: 1440px)
+{
+    .container{
+        width: 400px;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 40px;
+    }
+    .qr-code{
+        border-radius: 37px; 
+    }
+    .container h1{
+        min-width: 300px;
+        text-align: center;
+    }
+    .container p{
+        font-size: 15px;
+    }
+    .attribution{
+        font-size: 11px;
+        text-align: center;
+    }
+        .attribution a{
+        color: hsl(228, 45%, 44%);
+    }
 }
