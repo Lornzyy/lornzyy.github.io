@@ -33,14 +33,15 @@ body{
 }
 .container h1{
     font-weight: 700;
-    margin: 0px 10px;
-    max-width: 350px;
+    margin: auto;
+    max-width: 12rem;
     text-align: center;
+    font-size: 1rem;
 }
 .container p{
     font-weight: 400;
     font-size: 0.9rem;
-    max-width: 220px;
+    max-width: 13.2rem;
     text-align: center;
     padding: 7px;
     margin: auto;
@@ -54,7 +55,6 @@ body{
 }
 .attribution a{
     color: hsl(228, 45%, 44%);
-    flex-direction: column;
 
 }
 .attribution a:hover{
@@ -62,8 +62,7 @@ body{
 }
 
 
-/** style for devices screen width from 375px and 
-below and larger than 1440*/
+/** style for devices screen width from 375px and below */
 @media only screen and (max-width: 375px)
 {
     .container{
@@ -78,7 +77,7 @@ below and larger than 1440*/
     }
     .container h1{
         margin: 0px 5px 0px 50px;
-        min-width: 350px;
+        max-width: 15rem;
         text-align: center;
     }
     .container p{
@@ -86,6 +85,10 @@ below and larger than 1440*/
         padding: 5px;
         margin-left: 70px;
         margin-right: 50px;
+
+    }
+    .attribution{
+        flex-direction: column;
 
     }
 
